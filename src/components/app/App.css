@@ -1,0 +1,13 @@
+.standardView {
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.darkView {
+    background-color: black;
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    
+}

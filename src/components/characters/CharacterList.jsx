@@ -1,9 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Character from './Character'
+import styles from '../app/App.css'
+import { useTheme } from '../../../state/ThemeProvider'
 
 function CharacterList({characters}) {
+    const theme = useTheme
     return (
+    <div  className={`${
+        theme === 'dark'
+        ? styles.darkView
+        : styles.standardView}`}>
         <ul aria-label='character-list'>
             {characters.map((character)=> (
                 <li key={character.id}>
@@ -17,6 +24,7 @@ function CharacterList({characters}) {
                 </li>
             ))}
         </ul>
+    </div>
     )
 }
 
